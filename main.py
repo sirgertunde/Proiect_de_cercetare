@@ -1,7 +1,6 @@
 import math
 
 from hybrid_gcd_algorithm import hybrid_gcd
-from known_gcd_algorithms import extended_euclidean_gcd
 
 if __name__ == "__main__":
     a = 12222222222211111222222211111112345678901234567890

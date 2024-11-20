@@ -1,4 +1,10 @@
 def hybrid_gcd(a, b):
+    """
+        :param a: cryptographically large number
+        :param b: cryptographically large number
+        :return: the greatest common divisor of a and b
+        combining the Euclidean and the Binary GCD algorithms
+        """
     while max(a, b) > 2 ** 16:
         if b == 0:
             return a
@@ -7,6 +13,11 @@ def hybrid_gcd(a, b):
 
 
 def binary_gcd(a, b):
+    """
+        :param a: cryptographically large number
+        :param b: cryptographically large number
+        :return: the greatest common divisor of a and b using Stein's algorithm
+        """
     if a == 0:
         return b
     if b == 0:
