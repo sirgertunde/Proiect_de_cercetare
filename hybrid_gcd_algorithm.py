@@ -47,6 +47,11 @@ def binary_gcd(a, b):
 
 
 def binary_gcd_bitwise_version(a, b):
+    """
+            :param a: cryptographically large number
+            :param b: cryptographically large number
+            :return: the greatest common divisor of a and b using binary GCD algorithm with bitwise operations
+            """
     if a == 0:
         return b
     if b == 0:

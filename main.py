@@ -34,8 +34,7 @@ if __name__ == "__main__":
     print("For cryptographically large numbers:")
     t = perf_counter_ns()
     gcd = euclid_gcd(large_number1, large_number2)
-    print("GCD = " + str(gcd) + ": Euclidean algorithm in " + str(
-        perf_counter_ns() - t) + " nanoseconds")
+    print("GCD = " + str(gcd) + ": Euclidean algorithm in " + str(perf_counter_ns() - t) + " nanoseconds")
     t = perf_counter_ns()
     gcd = extended_euclid_gcd(large_number1, large_number2)
     print("GCD = " + str(gcd) + ": Extended Euclidean algorithm in " + str(perf_counter_ns() - t) + " nanoseconds")
